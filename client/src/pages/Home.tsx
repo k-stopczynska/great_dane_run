@@ -1,9 +1,11 @@
 import Hero from "@/components/Hero";
+import InfoSection from "@/components/InfoSection";
 
 const Home = () => { 
     return (
 		<>
-			<Hero/>
+            <Hero />
+            <InfoSection />
 		</>
 	);
 }

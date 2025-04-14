@@ -36,10 +36,12 @@ const items = [
 const InfoSection = () => {
     return (
 		<section>
-			<h2>Jak to działa?</h2>
-			{items.map((item, index) =>
-				item ? <InfoSectionItem key={index} {...item} /> : null,
-			)}
+			<h2 className='text-2xl lg:text-5xl font-bold text-center pt-8 lg:pt-12 pb-2'>Jak to działa?</h2>
+			<div className='grid grid-cols-2 md:grid-cols-4 gap-4 lg:gap-8items-baseline p-4 lg:p-12'>
+				{items.map((item, index) =>
+					item ? <InfoSectionItem key={index} {...item} /> : null,
+				)}
+			</div>
 		</section>
 	);
 

@@ -7,16 +7,23 @@ import logo from '../assets/logo.jpg';
 const Navbar = () => {
 	return (
 		<nav className='flex items-center justify-between px-4 lg:px-12 py-3 shadow-md bg-white'>
-			<img src={logo} alt='logo' className='w-[70px] h-[70px] my-[-10px] mx-[-10px]'></img>
+			<img
+				src={logo}
+				alt='logo'
+				className='w-[70px] h-[70px] my-[-10px] mx-[-10px]'
+			></img>
 			<div className='hidden md:flex gap-6'>
 				<Link to='/' className='hover:underline'>
 					Home
 				</Link>
-				<Link to='/about' className='hover:underline'>
-					About
+				<Link to='/register' className='hover:underline'>
+					Login/Register
 				</Link>
-				<Link to='/contact' className='hover:underline'>
-					Contact
+				<Link to='/events' className='hover:underline'>
+					Events
+				</Link>
+				<Link to='/cart' className='hover:underline'>
+					Cart
 				</Link>
 			</div>
 
@@ -32,11 +39,14 @@ const Navbar = () => {
 							<Link to='/' className='hover:underline'>
 								Home
 							</Link>
-							<Link to='/about' className='hover:underline'>
-								About
+							<Link to='/register' className='hover:underline'>
+								Login/Register
 							</Link>
-							<Link to='/contact' className='hover:underline'>
-								Contact
+							<Link to='/events' className='hover:underline'>
+								Events
+							</Link>
+							<Link to='/cart' className='hover:underline'>
+								Cart
 							</Link>
 						</div>
 					</SheetContent>
